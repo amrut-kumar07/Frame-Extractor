@@ -1,0 +1,5 @@
+<h3>Upload a video to extract frames!</h3>
+<input type="file" (change)="onFileSelected($event)">
+<button [style.display]="showCombineButton ? 'inline-block' : 'none'" (click)="combineFramesToVideo()">Combine Frames to Video</button>
+<p>{{ message }}</p>
+<div #framesContainer id="frames-container"></div>
